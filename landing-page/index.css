@@ -310,16 +310,25 @@ h2 {
     background-color: white;
     color: #ff52bf;
 }
-ul {
-    display: flex;
-    gap: 10px;
+.social-icons {
     list-style: none; 
-    padding: 0;
+    display: flex; 
+    gap: 15px; 
 }
 
-li {
+.social-icons li {
     display: inline-block;
+    font-size: 24px; 
+    color: white; 
+    transition: color 0.3s ease, transform 0.2s ease; 
+    cursor: pointer; 
 }
+
+.social-icons li:hover {
+    color: #ff69b4; 
+    transform: scale(1.2); 
+}
+
 
 .contact-info {
     display: flex;
@@ -333,4 +342,14 @@ li {
     width: 20px; 
     height: auto;
 }
+.contact-info a {
+    text-decoration: none; 
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff69b4; 
+}
+
 
